@@ -1,15 +1,9 @@
 package cubik.operacions;
 
-import cubik.Cubik;
+public class _0i extends _i implements Operacio {
 
-public class _0i implements Operacio {
-
-  Operacio op = new _0();
-
-  @Override
-  public Cubik on(Cubik cubik) {
-    return op.on(op.on(cubik));
+  public _0i() {
+    super(new _0());
   }
-
 
 }
