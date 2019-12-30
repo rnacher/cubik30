@@ -29,7 +29,7 @@ public class Main {
         .toArray(new Operacio[0]);
 
     HashSet<String> set = new HashSet<>();
-    Cubik cubik = CubikFactory.build("yorb_bwyg_rywo_grwb_gywo_brog", "wryobb");
+    Cubik cubik = CubikFactory.build("wrob_wrgr_ybyb_wgwb_rgoo_ygyo", "wryogb");
     // Cubik cubik = CubikFactory.buildSolved();
     System.out.println((cubik.getId()));
     System.out.println("--------");
@@ -42,7 +42,7 @@ public class Main {
     Instant start = Instant.now();
     while (level <= LEVEL) {
       ArrayList<Node> itemsNextLevel = new ArrayList<>();
-      items.forEach((node) -> {
+      items.forEach(node -> {
 
         for (int op = 0; op < operacions.length; op++) {
           Cubik childCubik = operacions[op].on(node.cubik);
